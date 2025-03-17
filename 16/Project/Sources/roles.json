@@ -1,0 +1,71 @@
+{
+	"privileges": [
+		{
+			"privilege": "none",
+			"includes": []
+		},
+		{
+			"privilege": "member",
+			"includes": []
+		}
+	],
+	
+	"roles": [],
+	
+	"permissions": {
+		"allowed": [
+			{
+				"applyTo":"ds",
+				"type": "datastore",
+				"read": ["none"],
+				"create": ["none"],
+				"update": ["none"],
+				"drop": ["none"],
+				"execute": ["none"],
+				"promote": ["none"]
+			},
+			{
+				"applyTo":"DocumentHTTPHandler.list",
+				"type": "singletonMethod",
+				"read": ["none"],
+				"create": ["none"],
+				"update": ["none"],
+				"drop": ["none"],
+				"execute": ["guest"],
+				"promote": ["none"]
+			},
+			{
+				"applyTo":"DocumentHTTPHandler.download",
+				"type": "singletonMethod",
+				"read": ["none"],
+				"create": ["none"],
+				"update": ["none"],
+				"drop": ["none"],
+				"execute": ["member"],
+				"promote": ["none"]
+			},
+			{
+				"applyTo":"HTTPHandler.login",
+				"type": "singletonMethod",
+				"read": ["none"],
+				"create": ["none"],
+				"update": ["none"],
+				"drop": ["none"],
+				"execute": ["guest"],
+				"promote": ["none"]
+			},
+			{
+				"applyTo":"HTTPHandler.logout",
+				"type": "singletonMethod",
+				"read": ["none"],
+				"create": ["none"],
+				"update": ["none"],
+				"drop": ["none"],
+				"execute": ["member"],
+				"promote": ["none"]
+			}
+		]
+	},
+
+	"forceLogin": true
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="5">
+	<com.4d>
+		<web>
+			<standalone_server>
+				<configuration allow_ssl="false" publish_at_startup="true" session_mode="1">
+					<hosts>
+						<host home_page="" id="0" name="default"/>
+					</hosts>
+				</configuration>
+			</standalone_server>
+		</web>
+		<compiler>
+			<options target="all"/>
+		</compiler>
+	</com.4d>
+</preferences>
